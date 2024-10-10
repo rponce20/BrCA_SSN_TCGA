@@ -2,7 +2,7 @@
 
 # Single-Sample Gene Coexpression Networks in Breast Cancer Subtypes
 
-This repository contains the R scripts and analysis pipelines used in the study of gene coexpression networks across breast cancer subtypes. The analysis focuses on single-sample coexpression networks, utilizing RNA-Seq data from *The Cancer Genome Atlas (TCGA)*. The goal of this research is to uncover structural and functional alterations in the coexpression networks of different breast cancer subtypes (Luminal A, Luminal B, Her2-enriched, Basal-like) compared to normal breast tissue.
+This repository contains the R scripts and analysis pipelines used in the study of gene coexpression networks across breast cancer subtypes. The analysis focuses on single-sample coexpression networks, utilizing RNA-Seq data from *The Cancer Genome Atlas (TCGA)*. The goal of this research is to uncover, individually, structural and functional alterations in the coexpression networks of different breast cancer subtypes (Luminal A, Luminal B, Her2, Basal) compared to normal breast tissue.
 
 ## Study Overview
 Breast cancer is characterized by significant molecular heterogeneity, which poses challenges for diagnosis and treatment. By leveraging the **LIONESS** and **ARACNe** algorithms, we construct individual-specific gene coexpression networks. These networks allow for a detailed exploration of intrachromosomal (CIS) and interchromosomal (TRANS) interactions, identifying patterns of genomic regulation and instability unique to each subtype.
