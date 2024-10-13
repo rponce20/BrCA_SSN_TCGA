@@ -105,40 +105,4 @@ ggbiplot(after.pca, var.axes = FALSE, ellipse = TRUE, groups = factors$Group)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   
