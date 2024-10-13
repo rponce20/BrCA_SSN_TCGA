@@ -16,6 +16,5 @@ Breast cancer is characterized by significant molecular heterogeneity, which pos
 ## Repository Contents:
 - **R Scripts**: All scripts used for generating figures and calculating network metrics are included in the `scripts/` directory. Each script corresponds to a specific figure or section of the article.
 - **Data**: The RNA-Seq data used in this study is publicly available from the TCGA database. This repository does not include the raw data, but preprocessing steps can be found in the `data_processing/` directory.
-- **Figures**: Generated figures are located in the `figures/` directory, and include visualizations of coexpression networks, Kaplan-Meier survival curves, and Jaccard index comparisons.
-- **Analysis Pipelines**: Detailed pipelines for network inference (ARACNe and LIONESS), network metric calculation, and survival analysis are provided in the `analysis/` directory.
+
 
