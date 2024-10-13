@@ -17,4 +17,17 @@ Breast cancer is characterized by significant molecular heterogeneity, which pos
 - **R Scripts**: All scripts used for generating figures and calculating network metrics are included in the `scripts/` directory. Each script corresponds to a specific figure or section of the article.
 - **Data**: The RNA-Seq data used in this study is publicly available from the TCGA database. This repository does not include the raw data, but preprocessing steps can be found in the `data_processing/` directory.
 
+## Network Construction and Inference
+
+For the construction of aggregated gene coexpression networks, it was utilized the ARACNe algorithm from the following repository:
+
+- ARACNe multicore implementation: [https://github.com/josemaz/aracne-multicore](https://github.com/josemaz/aracne-multicore)
+
+This allowed us to efficiently compute mutual information between gene expression profiles and infer coexpression connections across breast cancer subtypes and normal tissues.
+
+For single-sample network inference, it was applied the LIONESS algorithm, which is available at:
+
+- LIONESS-MI implementation: [https://github.com/PatricioLOPSA/LIONESS-MI](https://github.com/PatricioLOPSA/LIONESS-MI)
+
+The LIONESS method enabled the construction of individual networks for each patient, providing insight into unique coexpression patterns at the single-sample level.
 
