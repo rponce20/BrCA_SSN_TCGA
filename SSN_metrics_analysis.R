@@ -1,5 +1,5 @@
 ################################################################################
-############### NETWORK METRICS ANALYSIS ###################################
+################### NETWORK METRICS ANALYSIS ###################################
 
 # This section computes six key network metrics: Clustering coefficient, Modularity, 
 # Closeness, Degree, Global Efficiency, and Density. The analysis is performed on 
@@ -157,4 +157,16 @@ p <- ggplot(df_grafico_boxplot, aes(x = Subtipo, y = Valor, fill = Subtipo)) +
     panel.grid.major = element_blank(),  # Remove major grid lines
     panel.grid.minor = element_blank(),  # Remove minor grid lines
     panel.border = element_blank(),  # Remove panel borders
-    axis.line.x = element_line(col
+    axis.line.x = element_line(colour = "black", linewidth = 0.5),  # Keep x-axis line
+    axis.line.y = element_line(colour = "black", linewidth = 0.5)   # Keep y-axis line
+  ) +
+  geom_signif(comparisons = comparisons, 
+              map_signif_level = TRUE, test = "wilcox.test", 
+              step_increase = 0.1, 
+              textsize = 3.5, 
+              tip_length = 0.01)
+
+# Print the plot
+print(p)
+
+ggsave("network_metrics_by_subtype_signif.jpeg", plot = p, width = 16, height = 10, dpi = 300)
