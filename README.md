@@ -1,4 +1,4 @@
-# Rich_SSN
+# BrCA_SSN_TCGA
 
 # Single-Sample Gene Coexpression Networks in Breast Cancer Subtypes
 
